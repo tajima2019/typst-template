@@ -8,10 +8,14 @@
 #show: conf
 
 #report-title("Example", "学籍番号", "名前")
-#header("header")
-#subheader("subheader")
-#subsubheader("subsubheader")
-- hogehoge
+= h1
+== h2
+===  h3
+hogehoge
+
+- unordered list 1
+
++ ordered list 1
 
 #figure(
   caption: [time.html],
@@ -23,3 +27,9 @@
   </html>
   ```]
 )
+
+@fig:arrow のように参照できる
+#figure(
+  image("../assets/arrow.png", width: 30%),
+  caption: [arrow image],
+)<fig:arrow>
