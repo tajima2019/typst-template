@@ -21,6 +21,23 @@
   // キャプションの文字色
   show figure.caption: set text(fill: rgb("#d9796a"), weight: "bold")
 
+  // 1. 自動番号付けを有効化
+  set heading(numbering: "1.1")
+
+  // 2. 各レベルのフォントサイズを設定
+  show heading.where(level: 1): set text(size: 20pt, weight: "bold")
+  
+  show heading.where(level: 2): set text(size: 16pt, weight: "bold")
+  
+  show heading.where(level: 3): set text(size: 14pt, weight: "bold")
+
+  // 見出しの上下に少し余白を入れる設定（お好みで）
+  show heading: it => {
+    v(0.5em)
+    it
+    v(0.3em)
+  }
+
   // 最後にドキュメントの中身を出力
   doc
 }
