@@ -13,6 +13,7 @@
     lang: "ja",
     weight: "bold"
   )
+  set par(leading: 0.9em)
 
   // 図のキャプション位置
   set figure.caption(position: top)
